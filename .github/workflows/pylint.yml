@@ -27,4 +27,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        files=$(git ls-files '*.py')
+        if [ -n "$files" ]; then
+          pylint $files
+        fi
