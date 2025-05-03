@@ -1,10 +1,11 @@
-    GREETING = "Hello, world!"  # Centralized configuration
+GREETING = "Hello, world!"  # Centralized configuration
 
     def hello() -> str:
-        """Return standardized greeting message.
-
+        """
+        Returns the configured greeting message.
+        
         Returns:
-            str: Configured greeting string
+            The standardized greeting string.
         """
         return GREETING
 
