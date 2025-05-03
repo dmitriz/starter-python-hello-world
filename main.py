@@ -1,12 +1,12 @@
     GREETING = "Hello, world!"  # Centralized configuration
 
-    def hello() -> str:
-        """Return standardized greeting message.
+def hello() -> str:
+    """Return standardized greeting message.
 
-        Returns:
-            str: Configured greeting string
-        """
-        return GREETING
+    Returns:
+        str: Configured greeting string
+    """
+    return GREETING
 
     if __name__ == "__main__":
         try:
