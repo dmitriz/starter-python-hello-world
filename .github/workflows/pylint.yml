@@ -14,9 +14,9 @@ jobs:
       matrix:
         python-version: ["3.8", "3.9", "3.10"]
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@b7e2ac8a41496c0ce744f29a5970842719e42f09
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@3bb5679799c2d03a476c6fadaa298f976280b761
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
